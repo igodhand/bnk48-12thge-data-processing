@@ -1,4 +1,14 @@
+import csv
+import requests
 import pandas as pd
+
+# Download Data
+# url = 'https://www.bnk48.com/ge/12thsinglegeresults.csv'
+# response = requests.get(url)
+# with open('12thsinglegeresults.csv', 'w') as f:
+#    writer = csv.writer(f)
+#    for line in response.iter_lines():
+#        writer.writerow(line.decode('utf-8').split(','))
 
 # Read Data / Cleanup Columns
 df = pd.read_csv("12thsinglegeresults.csv", sep=",")
